@@ -7,9 +7,9 @@ exposures:
     description: 'Expsosure for orders metrics'
     depends_on:
       - ref('fct_orders')
-      - metric('order_total')
-      - metric('large_orders')
-      - metric('cumulative_order_amount_mtd')
+      # - metric('order_total')
+      # - metric('large_orders')
+      # - metric('cumulative_order_amount_mtd')
     owner:
       name: Michael McData
       email: data@jaffleshop.com

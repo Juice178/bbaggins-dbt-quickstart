@@ -1,0 +1,14 @@
+groups:
+  - name: finance
+    owner:
+      # 'name' or 'email' is required; additional properties allowed
+      email: finance@jaffleshop.com
+      slack: finance-data
+      github: finance-data-team
+
+  - name: product
+    owner:
+      # 'name' or 'email' is required; additional properties allowed
+      email: product@jaffleshop.com
+      slack: product-data
+      github: product-data-team

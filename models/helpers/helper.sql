@@ -1,0 +1,2 @@
+select
+  {{ find_datatypes(ref('fct_order_items')) }}

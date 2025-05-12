@@ -9,6 +9,7 @@ models:
         tests:
           - unique
           - not_null
+          - average_dollars_spent_greater_than_one
 
   - name: stg_jaffle_shop__orders
     description: Staged order data from our jaffle shop app.
@@ -18,6 +19,8 @@ models:
         tests:
           - unique
           - not_null
+          - assert_dollars_spent_are_greater_than_one:
+              group_by_column: order_id
       - name: status
         description: '{{ doc("order_status") }}'
         tests:
